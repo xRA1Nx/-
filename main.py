@@ -29,7 +29,7 @@ def shortest_way(inp_list):
                     p4p5 = p3p4 + distance_dict[str(p4) + str(p5)]
                     p5p1 = p4p5 + distance_dict[str(p5) + str(p1)]
                     res_dict[f"{p1} -> {p2}[{p1p2}] -> {p3}[{p2p3}] -> \
-                        {p4}[{p3p4}] -> {p5}[{p4p5}] -> {p1}[{p5p1}] ="] = p5p1
+{p4}[{p3p4}] -> {p5}[{p4p5}] -> {p1}[{p5p1}] ="] = p5p1
     res_way = min(res_dict, key=lambda x: res_dict[x])
     print("Кратчайший путь:")
     print(res_way, res_dict[res_way])
